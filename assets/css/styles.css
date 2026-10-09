@@ -166,6 +166,14 @@ ul, ol { padding-left: 1.2rem; margin: 0 0 1rem; }
 .level .outcome { font-size: 0.88rem; border-top: 1px solid var(--line); padding-top: 0.9rem; margin-top: 0.4rem; }
 .level .fee { font-size: 1.5rem; font-weight: 800; color: var(--navy); margin: 0.2rem 0 0.8rem; }
 .level .fee small { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+.service-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; margin: 0 0 1.4rem; }
+.service-tags li { background: rgba(217, 162, 27, 0.18); border: 1px solid var(--gold); color: #fff; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 999px; padding: 0.4rem 1.1rem; }
+.level .group-rate { font-size: 0.88rem; background: var(--alt); border-radius: 10px; padding: 0.55rem 0.8rem; margin: 0 0 0.9rem; color: var(--navy); }
+.level .group-rate strong { color: var(--gold-text); }
+.price-row span em { display: block; font-style: normal; font-weight: 600; font-size: 0.78rem; color: #c3d1ec; }
+.price-row { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin: 2rem 0 0; }
+.price-row span { background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 999px; padding: 0.55rem 1.3rem; font-weight: 700; color: #fff; }
+.price-row b { color: var(--gold); }
 .level .card-actions { margin-top: auto; padding-top: 0.8rem; }
 .badge { display: inline-block; align-self: flex-start; font-size: 0.72rem; font-weight: 800; padding: 0.3rem 0.8rem; border-radius: 999px; background: var(--alt); color: var(--blue); letter-spacing: 0.04em; }
 .pipeline { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; align-items: center; font-weight: 800; font-size: 1.1rem; color: var(--navy); margin-bottom: 2rem; }
@@ -215,6 +223,10 @@ ul, ol { padding-left: 1.2rem; margin: 0 0 1rem; }
 .form input, .form select, .form textarea { width: 100%; padding: 0.8rem 0.9rem; border: 1.5px solid #cdd6e6; border-radius: 10px; font: 500 0.95rem var(--font); color: var(--text); background: #fff; }
 .form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(15, 76, 138, 0.18); }
 .form [hidden] { display: none !important; }
+.form .checks { border: 1.5px solid #cdd6e6; border-radius: 10px; padding: 0.9rem 1rem 0.5rem; margin: 0; display: grid; gap: 0.1rem; }
+.form .checks legend { font-weight: 700; font-size: 0.86rem; color: var(--navy); padding: 0 0.4rem; }
+.form .checks label { display: flex; align-items: flex-start; gap: 0.6rem; font-weight: 500; color: var(--text); padding: 0.35rem 0; cursor: pointer; }
+.form .checks input[type="checkbox"] { width: 1.1rem; height: 1.1rem; margin-top: 0.2rem; flex: none; accent-color: var(--blue); }
 .form .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; }
 .form .btn { justify-self: start; }
 .form-status { margin: 0; font-weight: 700; min-height: 1.5em; }

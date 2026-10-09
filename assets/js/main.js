@@ -134,7 +134,11 @@
       fd.delete("_gotcha");
 
       var data = {};
-      fd.forEach(function (v, k) { if (String(v).trim() !== "") data[k] = String(v).trim(); });
+      // Fields with several values (e.g. ticked checkboxes) are joined with commas.
+      Array.from(new Set(Array.from(fd.keys()))).forEach(function (k) {
+        var vals = fd.getAll(k).map(function (v) { return String(v).trim(); }).filter(Boolean);
+        if (vals.length) data[k] = vals.join(", ");
+      });
       var subject = form.getAttribute("data-subject") || "Website enquiry";
       data._subject = subject;
       if (data.email) data._replyto = data.email;
