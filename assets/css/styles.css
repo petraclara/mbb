@@ -156,11 +156,16 @@ ul, ol { padding-left: 1.2rem; margin: 0 0 1rem; }
 .value p { font-size: 0.85rem; color: var(--muted); margin: 0; }
 
 /* ---------- Academy levels ---------- */
+.level-group { margin-top: 2.4rem; }
+.level-group:first-of-type { margin-top: 0; }
+.level-group > h3 { font-size: 1.35rem; margin-bottom: 0.3rem; }
+.level-group > p { margin-bottom: 1.2rem; font-size: 0.95rem; }
+.on-dark .level-group > p { color: #c3d1ec; }
 .levels { display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
 .level { background: #fff; color: var(--text); border-radius: var(--radius); padding: 2rem 1.6rem; box-shadow: var(--shadow); display: flex; flex-direction: column; border-top: 6px solid var(--blue); }
 .level.l2 { border-top-color: var(--gold); }
 .level.l3 { border-top-color: var(--navy); }
-.level h3 { color: var(--navy) !important; font-size: 1.35rem; margin: 0.6rem 0 0.2rem; }
+.level h3, .level h4 { color: var(--navy) !important; font-size: 1.35rem; margin: 0.6rem 0 0.2rem; }
 .level .focus { color: var(--gold-text); font-weight: 700; font-size: 0.88rem; }
 .level ul { font-size: 0.92rem; color: var(--muted); }
 .level .outcome { font-size: 0.88rem; border-top: 1px solid var(--line); padding-top: 0.9rem; margin-top: 0.4rem; }
