@@ -1,11 +1,31 @@
 import type { NextConfig } from "next";
 
+const pages = [
+  "about",
+  "programs",
+  "academy",
+  "impact",
+  "stories",
+  "mentors-connect",
+  "partner",
+  "book",
+  "join",
+  "apply",
+  "contact",
+];
+
 const nextConfig: NextConfig = {
-  // Static HTML so the site can still deploy to GitHub Pages.
-  // trailingSlash makes URLs /about/ instead of /about.html.
-  output: "export",
   trailingSlash: true,
-  images: { unoptimized: true },
+  async redirects() {
+    return [
+      { source: "/index.html", destination: "/", permanent: true },
+      ...pages.map((page) => ({
+        source: `/${page}.html`,
+        destination: `/${page}/`,
+        permanent: true,
+      })),
+    ];
+  },
 };
 
 export default nextConfig;

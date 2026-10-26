@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/html-redirects.mjs",
-    "start": "npx --yes serve out"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "next": "^15.5.4",
